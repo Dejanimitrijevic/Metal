@@ -1,0 +1,35 @@
+.slider-mobile-gutter .parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.slider-mobile-gutter .parent .grid__layout__item--1 { grid-area: 1 / 1 / 4 / 5; }
+.slider-mobile-gutter .parent .grid__layout__item--2 { grid-area: 1 / 5 / 4 / 7; }
+.slider-mobile-gutter .parent .grid__layout__item--3 { grid-area: 4 / 1 / 6 / 3; }
+.slider-mobile-gutter .parent .grid__layout__item--4 { grid-area: 4 / 3 / 6 / 5; }
+.slider-mobile-gutter .parent .grid__layout__item--5 { grid-area: 4 / 5 / 6 / 7; }
+
+/* .slider-mobile-gutter .parent .grid__layout__item--1,
+.slider-mobile-gutter .parent .grid__layout__item--2
+ {
+    height: calc(300% / 4); 
+} */
+.scroll-trigger .card-wrapper .card__content {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+.grid__layout__item--2 .card-wrapper .card__inner {
+    height: 100%;
+}
+.slider-mobile-gutter .parent .card__content {
+    padding: 0;
+    width: auto;
+}
+.slider-mobile-gutter .parent .card__information {
+    padding: 1.3rem 0;
+}
+
