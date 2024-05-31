@@ -1,0 +1,153 @@
+{{ 'item-title.css' | asset_url | stylesheet_tag }}
+
+<style>
+.custom-feature-collection .parent-5 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    aspect-ratio: 1.2;
+}    
+.custom-feature-collection .parent-5 .grid__layout-5__item--1 { grid-area: 1 / 1 / 4 / 5; }
+.custom-feature-collection .parent-5 .grid__layout-5__item--2 { grid-area: 1 / 5 / 4 / 7; }
+.custom-feature-collection .parent-5 .grid__layout-5__item--3 { grid-area: 4 / 1 / 6 / 3; }
+.custom-feature-collection .parent-5 .grid__layout-5__item--4 { grid-area: 4 / 3 / 6 / 5; }
+.custom-feature-collection .parent-5 .grid__layout-5__item--5 { grid-area: 4 / 5 / 6 / 7; }
+
+.parent-4 {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+aspect-ratio: 1.5;
+}
+
+.custom-feature-collection .parent-4 .grid__layout-4__item--1 { grid-area: 1 / 1 / 2 / 3; }
+.custom-feature-collection .parent-4 .grid__layout-4__item--2 { grid-area: 1 / 3 / 3 / 4; }
+.custom-feature-collection .parent-4 .grid__layout-4__item--3 { grid-area: 2 / 1 / 3 / 2; }
+.custom-feature-collection .parent-4 .grid__layout-4__item--4 { grid-area: 2 / 2 / 3 / 3; }
+
+.custom-feature-collection .main {
+    padding: 0;
+    margin: 0;
+ }
+
+.custom-feature-collection .predictive-search__image {
+    object-fit: fill;
+}
+.product-detail {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+.product-detail h3 {
+    font-family: Geologica;
+    font-size: 24px;
+    letter-spacing: -1px;
+    margin: 0;
+}
+li {
+    list-style: none;
+    position: relative;
+}
+.hidden_product_detail {
+    display: none;
+}
+
+</style>
+<div class="custom-feature-collection">
+    <div class="container color-{{ section.settings.color_scheme }}">
+        <h1 class="item_title">{{ section.settings.header }}</h1>
+        <ul class="main {% if section.blocks.size == 5 %}parent-5{% endif %} {% if section.blocks.size == 4 %}parent-4{% endif %} ">       
+            {% for block in section.blocks %}
+                {% assign product = block.settings.product %}
+                {% if block.type == "block" %}
+                    <li class="{% if section.blocks.size == 5 %}grid__layout-5__item--{{ forloop.index }}{% endif %} {% if section.blocks.size == 4 %}grid__layout-4__item--{{ forloop.index }}{% endif %} color-{{ block.settings.color_scheme }}">
+                        <a href="{{ product.url }}" class="product-image-detail">
+                            <img
+                                srcset="
+                                {% if product.featured_media.width >= 350 %}{{ product.featured_media | image_url: width: 350 }} 350w,{% endif %}
+                                {% if product.featured_media.width >= 750 %}{{ product.featured_media | image_url: width: 750 }} 750w,{% endif %}
+                                {% if product.featured_media.width >= 1100 %}{{ product.featured_media | image_url: width: 1100 }} 1100w,{% endif %}
+                                {% if product.featured_media.width >= 1500 %}{{ product.featured_media | image_url: width: 1500 }} 1500w,{% endif %}
+                                {% if product.featured_media.width >= 2200 %}{{ product.featured_media | image_url: width: 2200 }} 2200w,{% endif %}
+                                {% if product.featured_media.width >= 3000 %}{{ product.featured_media | image_url: width: 3000 }} 3000w,{% endif %}
+                                {{ product.featured_media | image_url }} {{ product.featured_media.width }}w
+                                "
+                                src="{{ product.featured_media | image_url: width: 1100 }}"
+                                loading="eager"
+                                fetchpriority="high"
+                                width="100%"
+                                height="100%"
+                                alt="{{ product.featured_media.alt | escape }}"
+                            >
+                        </a>
+                                <div class="product-detail {% if section.settings.hidden_product_detail == true %}hidden_product_detail{% endif %}">
+                                <h3 class="product__title">{{ product.title }}</h3>
+                                <h3 class="product__price">{{ product.price | money_without_trailing_zeros}}</h3>
+                            </div>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "custom-feature-collection",
+        "class": "section",
+        "settings": [
+            {
+                "type": "text",
+                "id": "header",
+                "label": "Header"
+            },
+            {
+            "type": "color_scheme",
+            "id": "color_scheme",
+            "label": "t:sections.all.colors.label",
+            "info": "t:sections.all.colors.has_cards_info",
+            "default": "scheme-1"
+            },
+            {
+                "type": "checkbox",
+                "id": "hidden_product_detail",
+                "label": "Hidden Product Detail",
+                "default": false
+            }
+        ],
+        "blocks": [
+            {
+                "type": "block",
+                "name": "product item",
+                "settings": [
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "product"
+                    },
+                    {
+                    "type": "color_scheme",
+                    "id": "color_scheme",
+                    "label": "t:sections.all.colors.label",
+                    "info": "t:sections.all.colors.has_cards_info",
+                    "default": "scheme-1"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "custom feature product",
+                "blocks": [
+                    {
+                        "type": "block"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

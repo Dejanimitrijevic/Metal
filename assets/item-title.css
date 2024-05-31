@@ -1,0 +1,20 @@
+.item_title {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    letter-spacing: 170px;
+    text-indent: 170px;
+    z-index: 1;
+    font-family: Geologica;
+    font-size: 60px;
+    line-height: 150%;
+}
+@media (max-width: 1700px ) {
+    .item_title {
+        position: relative;
+        letter-spacing: 100px;
+        text-indent: 100px;
+        margin: 0;
+    }
+}

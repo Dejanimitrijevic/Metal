@@ -1,0 +1,27 @@
+.custom-image-with-text .product-btn form {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.form .shopify-payment-button__button--unbranded {
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    width: 171px;
+    height: 88px;
+    border: 1px solid white;
+    font-size: 24px;
+}
+.form .custom-add-cart {
+    background: transparent;
+    width: 204px;
+    height: 88px;
+    padding: 0;
+    color: white;
+    border: 1px solid white;
+    font-size: 24px;
+}
+.display-none {
+    display: none;
+}

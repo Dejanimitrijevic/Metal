@@ -1,0 +1,71 @@
+.custom-image-with-text .image-text {
+    display: flex;
+    align-items: stretch;
+}
+.custom-image-with-text .content__place {
+    width: calc(200% / 3);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.custom-image-with-text .content-gap {
+    gap: 20px;
+}
+.custom-image-with-text .subtitle {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.custom-image-with-text .subtitle p {
+    font-family: Geologica;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.custom-image-with-text .content {
+    font-family: Geologica;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -1px;
+    padding-right: 100px; 
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+.custom-image-with-text .content p {
+    margin: 0;
+    padding: 20px 0;
+}
+.custom-image-with-text .image {
+    width: calc(100% / 3);
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    aspect-ratio: 0.84;
+    display: flex;
+}
+.custom-image-with-text .image img {
+    width: 100%;
+    height: 100%;
+}
+.custom-image-with-text .title p {
+    margin: 0;
+}
+.product-title-price {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    font-family: Geologica;
+    font-size: 24px;
+}
+.product-title-price p {
+    margin: 0;
+}
+
+
+
+

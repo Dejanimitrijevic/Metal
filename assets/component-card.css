@@ -118,7 +118,7 @@
   height: 100%;
 }
 
-.card--media .card__inner .card__content {
+.card--media .card__inner .card__content { 
   position: relative;
   padding: calc(var(--image-padding) + 1rem);
 }

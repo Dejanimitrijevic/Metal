@@ -8,7 +8,12 @@
   {% render 'header-search', input_id: 'My-Id'%}
 {% endcomment %}
 
-<details-modal class="header__search">
+<style>
+  .display-none {
+    display: none !important;
+  }
+</style>
+<details-modal class="header__search display-none">
   <details>
     <summary
       class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle"

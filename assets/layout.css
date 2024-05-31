@@ -32,4 +32,14 @@
 .slider-mobile-gutter .parent .card__information {
     padding: 1.3rem 0;
 }
-
+.slider-mobile-gutter .parent .price__regular .price-item--regular,
+.slider-mobile-gutter .parent h3 {
+    font-family: Geologica;
+    font-size: 24px;
+    letter-spacing: -3%;
+    line-height: 150%;
+}
+.grid__layout__item--2 h3,
+.grid__layout__item--2 .price__regular .price-item--regular {
+    color: #000000;
+} 

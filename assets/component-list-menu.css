@@ -28,3 +28,31 @@
   width: 10rem;
   padding: 0.5rem;
 }
+
+.footer .footer__content-top {
+  padding: 40px;
+}
+.footer .footer__content-top .footer__blocks-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__content-top .footer__blocks-wrapper .footer-block__heading {
+  font-family: Geologica;
+  font-size: 24px;
+  letter-spacing: 20px;
+}
+.footer__content-top .footer__blocks-wrapper a {
+  font-family: Geologica;
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  text-decoration: none;
+}
+.footer-block .footer-block__details-content {
+  justify-content: left;
+}
+.header .header__icons {
+  gap: 40px;
+}
+.header__icon account-icon {
+  display: flex;
+}
