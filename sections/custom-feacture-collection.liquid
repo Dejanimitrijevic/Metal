@@ -43,8 +43,6 @@ aspect-ratio: 1.5;
     bottom: 40px;
 }
 .product-detail h3 {
-    font-family: Geologica;
-    font-size: 24px;
     letter-spacing: -1px;
     margin: 0;
 }
@@ -86,7 +84,8 @@ li {
                         </a>
                                 <div class="product-detail {% if section.settings.hidden_product_detail == true %}hidden_product_detail{% endif %}">
                                 <h3 class="product__title">{{ product.title }}</h3>
-                                <h3 class="product__price">{{ product.price | money_without_trailing_zeros}}</h3>
+                                {% assign product_number = product.price | money_without_currency |  split: '.' %}
+                                <h3 class="product__price">{{ product_number.first }}£</h3>
                             </div>
                     </li>
                 {% endif %}

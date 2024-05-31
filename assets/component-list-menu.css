@@ -37,8 +37,6 @@
   justify-content: space-between;
 }
 .footer__content-top .footer__blocks-wrapper .footer-block__heading {
-  font-family: Geologica;
-  font-size: 24px;
   letter-spacing: 20px;
 }
 .footer__content-top .footer__blocks-wrapper a {
@@ -55,4 +53,20 @@
 }
 .header__icon account-icon {
   display: flex;
+}
+
+@media (max-width: 1440px) {
+  .footer__content-top .footer__blocks-wrapper a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer__content-top .footer__blocks-wrapper .footer-block__heading {
+    letter-spacing: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__content-top .footer__blocks-wrapper .footer-block__heading {
+    letter-spacing: 5px;
+  }
 }

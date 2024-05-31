@@ -10,11 +10,25 @@
     font-size: 60px;
     line-height: 150%;
 }
-@media (max-width: 1700px ) {
+
+@media (max-width: 1440px) {
     .item_title {
-        position: relative;
+        font-size: 45px;
         letter-spacing: 100px;
         text-indent: 100px;
-        margin: 0;
+    }
+}
+@media (max-width: 1024px) {
+    .item_title {
+        font-size: 40px;
+        letter-spacing: 75px;
+        text-indent: 75px;
+    }
+}
+@media (max-width: 768px) {
+    .item_title {
+        font-size: 30px;
+        letter-spacing: 55px;
+        text-indent: 55px;
     }
 }

@@ -251,3 +251,9 @@ details[open].menu-opening > .menu-drawer__submenu {
 .header__inline-menu ul li .header__menu-item span {
   text-decoration: none;
 }
+
+@media (max-width: 1440px) {
+  .header__inline-menu ul li .header__menu-item {
+    font-size: 20px;
+  }
+}

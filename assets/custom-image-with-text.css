@@ -59,13 +59,55 @@
     position: absolute;
     left: 40px;
     bottom: 40px;
-    font-family: Geologica;
-    font-size: 24px;
 }
-.product-title-price p {
+.product-title-price h3 {
     margin: 0;
 }
 
+@media (max-width: 1440px) {
+    .custom-image-with-text .content__place {
+        padding-top: 100px;
+    }
+    .custom-image-with-text .content p {
+        padding: 10px 0;
+    }
+    .custom-image-with-text .content {
+        font-size: 20px;
+    }
+    .custom-image-with-text .subtitle {
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+    .custom-image-with-text .content {
+        padding-right: 0;
+    }
+}
+@media (max-width: 1024px) {
+    .custom-image-with-text .image {
+        width: 50%;
+    }
+    .custom-image-with-text .content__place {
+        width: 50%;
+    }
+    .custom-image-with-text .content p {
+        padding: 5px 0;
+    }
+    .custom-image-with-text .content {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-image-with-text .image-text {
+        flex-direction: column-reverse;
+    }
+    .custom-image-with-text .image, .custom-image-with-text .content__place {
+        width: 100%;
+    }
+    .custom-image-with-text .content__place {
+        padding-top: 40px;
+    }
+}
 
 
 
