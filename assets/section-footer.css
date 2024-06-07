@@ -154,6 +154,11 @@
   margin-top: 0;
   font-size: calc(var(--font-heading-scale) * 1.6rem);
 }
+@media (max-width: 1440px) {
+  .footer-block__heading {
+    margin-bottom: 1.5rem;
+  }
+}
 
 @media screen and (min-width: 990px) {
   .footer-block__heading {
@@ -506,5 +511,11 @@
     .footer__content-top .grid__item {
       padding-left: 3rem;
     }
+  }
+}
+
+@media (max-width: 1440px) {
+  .footer-block__image-wrapper img {
+    width:222px;
   }
 }

@@ -16,7 +16,7 @@
 .custom-image-with-text .subtitle {
     margin: 0;
     font-size: 24px;
-    letter-spacing: 10px;
+    letter-spacing: 12px;
     text-transform: uppercase;
 }
 .custom-image-with-text .subtitle p {
@@ -31,10 +31,10 @@
     font-family: Geologica;
     font-size: 24px;
     line-height: 150%;
-    letter-spacing: -1px;
-    padding-right: 100px; 
+    letter-spacing: -0.6px;
+    padding-right: 65px; 
     margin-bottom: -20px;
-    margin-top: 20px;
+    margin-top: 12px;
 }
 .custom-image-with-text .content p {
     margin: 0;
@@ -62,24 +62,35 @@
 }
 .product-title-price h3 {
     margin: 0;
+    line-height: 150%;
+    letter-spacing: -0.3px;
 }
 
 @media (max-width: 1440px) {
     .custom-image-with-text .content__place {
-        padding-top: 100px;
+        padding: 100px 30px 30px 30px;
+    }
+    .custom-image-with-text .content-gap {
+        gap: 9px;
     }
     .custom-image-with-text .content p {
-        padding: 10px 0;
+        padding: 13px 0;
     }
     .custom-image-with-text .content {
-        font-size: 20px;
+        font-size: 18px;
     }
     .custom-image-with-text .subtitle {
-        font-size: 20px;
-        letter-spacing: 5px;
+        font-size: 18px;
+        letter-spacing: 9px;
     }
     .custom-image-with-text .content {
-        padding-right: 0;
+        padding-right: 50px;
+        letter-spacing: -0.55px;
+        padding-bottom: 8px;
+    }
+    .product-title-price {
+        left: 30px;
+        bottom: 30px;
     }
 }
 @media (max-width: 1024px) {

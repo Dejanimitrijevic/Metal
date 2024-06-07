@@ -25,3 +25,18 @@
 .display-none {
     display: none;
 }
+@media (max-width: 1440px) {
+    .custom-image-with-text .product-btn form {
+        gap: 15px;
+    }
+    .form .shopify-payment-button__button--unbranded {
+        width: 128.5px;
+        height: 66px;
+        font-size: 18px;
+    }
+    .form .custom-add-cart {
+        width: 153px;
+        height: 66px;
+        font-size: 18px;
+    }
+}

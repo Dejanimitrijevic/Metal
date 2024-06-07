@@ -247,6 +247,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   font-family: Geologica;
   font-size: 24px;
   line-height: 150%;
+  letter-spacing: -0.5px;
 }
 .header__inline-menu ul li .header__menu-item span {
   text-decoration: none;
@@ -254,6 +255,19 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 @media (max-width: 1440px) {
   .header__inline-menu ul li .header__menu-item {
-    font-size: 20px;
+    font-family: Geologica;
+    font-size: 18px;
+    letter-spacing: -0.45px;
+    line-height: 1;
   }
+  .header__inline-menu .list-menu .header__menu-item {
+    padding: 9px 15px;
+  }
+  .header:not(.drawer-menu).page-width {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 13.5px;
+    padding-bottom: 16.5px;
+  }
+  
 }

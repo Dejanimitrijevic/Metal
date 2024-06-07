@@ -1,37 +1,37 @@
 {
   "sections": {
-    "custom_feacture_collection_hdeDPX": {
-      "type": "custom-feacture-collection",
+    "double_layout_collection_EEprmd": {
+      "type": "Double-layout-collection",
       "blocks": {
-        "block_yep4EA": {
+        "block_VBRhxh": {
           "type": "block",
           "settings": {
             "product": "green-tan-briefcase",
             "color_scheme": "scheme-1a415c92-20b9-4d37-9d07-ce53c7805e46"
           }
         },
-        "block_Gxk3iw": {
+        "block_mJzp4Q": {
           "type": "block",
           "settings": {
             "product": "green-tan-briefcase-1",
             "color_scheme": "scheme-1"
           }
         },
-        "block_8EprFw": {
+        "block_tRg6mi": {
           "type": "block",
           "settings": {
             "product": "green-tan-briefcase-2",
             "color_scheme": "scheme-1a415c92-20b9-4d37-9d07-ce53c7805e46"
           }
         },
-        "block_exDbYe": {
+        "block_QM3RzN": {
           "type": "block",
           "settings": {
             "product": "green-tan-briefcase-3",
-            "color_scheme": "scheme-5"
+            "color_scheme": "scheme-1a415c92-20b9-4d37-9d07-ce53c7805e46"
           }
         },
-        "block_YpP7mi": {
+        "block_6gqtdy": {
           "type": "block",
           "settings": {
             "product": "green-tan-briefcase-4",
@@ -40,53 +40,65 @@
         }
       },
       "block_order": [
-        "block_yep4EA",
-        "block_Gxk3iw",
-        "block_8EprFw",
-        "block_exDbYe",
-        "block_YpP7mi"
+        "block_VBRhxh",
+        "block_mJzp4Q",
+        "block_tRg6mi",
+        "block_QM3RzN",
+        "block_6gqtdy"
       ],
       "settings": {
         "header": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "hidden_product_detail": false
       }
     },
-    "custom_image_with_text_zUTU3J": {
+    "custom_image_with_text_Yw7Yja": {
       "type": "custom-image-with-text",
+      "blocks": {
+        "buy_buttons_m83yNi": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "buy_buttons_m83yNi"
+      ],
       "settings": {
         "title": "CARE",
         "product": "care-balm",
         "sub_title": "",
-        "content": "<p>As leather ages, it undergoes a natural process of transformation, gaining character and patina over time. Exposure to elements like sunlight, moisture, and dirt can cause the leather to lose its suppleness and develop cracks or dullness. Without proper care, this beloved material can lose its charm, leaving owners dismayed by its diminished appearance.<\/p><p><\/p><p>Enter our premium leather balm, meticulously crafted to revive and protect your cherished leather possessions. Infused with nourishing ingredients, our balm restores moisture and enhances the natural luster of leather, effectively combating signs of aging. With regular application, our balm not only preserves the integrity of your leather goods but also prolongs their lifespan, ensuring they continue to exude timeless elegance for years to come. Treat your leather right with our trusted balm – because every piece deserves to age gracefully.<\/p>",
+        "content": "<p>As leather ages, it undergoes a natural process of transformation, gaining character and patina over time. Exposure to elements like sunlight, moisture, and dirt can cause the leather to lose its suppleness and develop cracks or dullness. Without proper care, this beloved material can lose its charm, leaving owners dismayed by its diminished appearance.<\/p><p>Enter our premium leather balm, meticulously crafted to revive and protect your cherished leather possessions. Infused with nourishing ingredients, our balm restores moisture and enhances the natural luster of leather, effectively combating signs of aging. With regular application, our balm not only preserves the integrity of your leather goods but also prolongs their lifespan, ensuring they continue to exude timeless elegance for years to come. Treat your leather right with our trusted balm – because every piece deserves to age gracefully.<\/p>",
         "color_scheme": "scheme-1a415c92-20b9-4d37-9d07-ce53c7805e46"
       }
     },
-    "custom_feacture_collection_MK36LV": {
-      "type": "custom-feacture-collection",
+    "double_layout_collection_xPJKAx": {
+      "type": "Double-layout-collection",
       "blocks": {
-        "block_QQkbEH": {
+        "block_6eptrW": {
           "type": "block",
           "settings": {
             "product": "green-tan",
             "color_scheme": ""
           }
         },
-        "block_7amtkY": {
+        "block_y4cC7U": {
           "type": "block",
           "settings": {
             "product": "green-tan-3",
             "color_scheme": "scheme-1"
           }
         },
-        "block_3gVAJ9": {
+        "block_GT4y8R": {
           "type": "block",
           "settings": {
             "product": "green-tan-1",
             "color_scheme": "scheme-1"
           }
         },
-        "block_9xFHQQ": {
+        "block_3qYRcB": {
           "type": "block",
           "settings": {
             "product": "green-tan-2",
@@ -95,10 +107,10 @@
         }
       },
       "block_order": [
-        "block_QQkbEH",
-        "block_7amtkY",
-        "block_3gVAJ9",
-        "block_9xFHQQ"
+        "block_6eptrW",
+        "block_y4cC7U",
+        "block_GT4y8R",
+        "block_3qYRcB"
       ],
       "settings": {
         "header": "BELTS",
@@ -106,49 +118,49 @@
         "hidden_product_detail": true
       }
     },
-    "custom_image_with_text_PxYUiM": {
+    "custom_image_with_text_ChwgN7": {
       "type": "custom-image-with-text",
       "settings": {
         "title": "BLOG",
         "product": "",
         "sub_title": "tanning processes for superior wallet quality",
-        "content": "<p>Welcome to our leather goods emporium, where craftsmanship meets timeless elegance. Since 2019, we've been dedicated to redefining luxury with the finest natural leather. Each piece is meticulously handcrafted, ensuring unmatched quality and authenticity.<\/p><p><\/p><p>We believe in the enduring beauty and durability of natural leather. That's why we source only the finest hides, creating products that exude luxury and sophistication. Our commitment to sustainability means that when you choose our goods, you're not just investing in style, but also in responsible consumerism.<\/p><p>From classic accessories to modern statement pieces, our collection offers something for every taste. Join us in celebrating the beauty of natural leather and timeless craftsmanship. Explore our range today and experience luxury redefined. Welcome to our leather goods store.<\/p>",
+        "content": "<p>Welcome to our leather goods emporium, where craftsmanship meets timeless elegance. Since 2019, we've been dedicated to redefining luxury with the finest natural leather. Each piece is meticulously handcrafted, ensuring unmatched quality and authenticity.<\/p><p>We believe in the enduring beauty and durability of natural leather. That's why we source only the finest hides, creating products that exude luxury and sophistication. Our commitment to sustainability means that when you choose our goods, you're not just investing in style, but also in responsible consumerism.<\/p><p>From classic accessories to modern statement pieces, our collection offers something for every taste. Join us in celebrating the beauty of natural leather and timeless craftsmanship. Explore our range today and experience luxury redefined. Welcome to our leather goods store.<\/p>",
         "image": "shopify:\/\/shop_images\/Rectangle_40176.png",
         "color_scheme": "scheme-1a415c92-20b9-4d37-9d07-ce53c7805e46"
       }
     },
-    "custom_feacture_collection_PEwPqy": {
-      "type": "custom-feacture-collection",
+    "double_layout_collection_UwJLed": {
+      "type": "Double-layout-collection",
       "blocks": {
-        "block_LzaznR": {
+        "block_wnJCeg": {
           "type": "block",
           "settings": {
             "product": "green-tan-briefcase",
             "color_scheme": "scheme-1a415c92-20b9-4d37-9d07-ce53c7805e46"
           }
         },
-        "block_K9Kk84": {
+        "block_3HyaYf": {
           "type": "block",
           "settings": {
             "product": "green-tan-4",
             "color_scheme": "scheme-1a415c92-20b9-4d37-9d07-ce53c7805e46"
           }
         },
-        "block_4yi7g9": {
+        "block_B8g9bW": {
           "type": "block",
           "settings": {
             "product": "green-tan-briefcase-2",
             "color_scheme": "scheme-1a415c92-20b9-4d37-9d07-ce53c7805e46"
           }
         },
-        "block_QHjdV6": {
+        "block_TwVQjp": {
           "type": "block",
           "settings": {
             "product": "green-tan-5",
             "color_scheme": "scheme-1a415c92-20b9-4d37-9d07-ce53c7805e46"
           }
         },
-        "block_iPzyrE": {
+        "block_8JLMdH": {
           "type": "block",
           "settings": {
             "product": "green-tan-briefcase-4",
@@ -157,11 +169,11 @@
         }
       },
       "block_order": [
-        "block_LzaznR",
-        "block_K9Kk84",
-        "block_4yi7g9",
-        "block_QHjdV6",
-        "block_iPzyrE"
+        "block_wnJCeg",
+        "block_3HyaYf",
+        "block_B8g9bW",
+        "block_TwVQjp",
+        "block_8JLMdH"
       ],
       "settings": {
         "header": "WALLETS",
@@ -169,42 +181,42 @@
         "hidden_product_detail": false
       }
     },
-    "custom_image_with_text_qqFnJ7": {
+    "custom_image_with_text_R74MQd": {
       "type": "custom-image-with-text",
       "settings": {
         "title": "ABOUT US",
         "product": "",
         "sub_title": "",
-        "content": "<p>Welcome to our leather goods emporium, where craftsmanship meets timeless elegance. Since 2019, we've been dedicated to redefining luxury with the finest natural leather. Each piece is meticulously handcrafted, ensuring unmatched quality and authenticity.<\/p><p>We believe in the enduring beauty and durability of natural leather. That's why we source only the finest hides, creating products that exude luxury and sophistication. Our commitment to sustainability means that when you choose our goods, you're not just investing in style, but also in responsible consumerism.<\/p><p>From classic accessories to modern statement pieces, our collection offers something for every taste. Join us in celebrating the beauty of natural leather and timeless craftsmanship. Explore our range today and experience luxury redefined. Welcome to our leather goods store.<br\/><br\/><\/p>",
+        "content": "<p>Welcome to our leather goods emporium, where craftsmanship meets timeless elegance. Since 2019, we've been dedicated to redefining luxury with the finest natural leather. Each piece is meticulously handcrafted, ensuring unmatched quality and authenticity.<\/p><p>We believe in the enduring beauty and durability of natural leather. That's why we source only the finest hides, creating products that exude luxury and sophistication. Our commitment to sustainability means that when you choose our goods, you're not just investing in style, but also in responsible consumerism.<\/p><p>From classic accessories to modern statement pieces, our collection offers something for every taste. Join us in celebrating the beauty of natural leather and timeless craftsmanship. Explore our range today and experience luxury redefined. Welcome to our leather goods store.<\/p>",
         "image": "shopify:\/\/shop_images\/Rectangle_40176_3.png",
         "color_scheme": "scheme-1a415c92-20b9-4d37-9d07-ce53c7805e46"
       }
     },
-    "custom_feacture_collection_ey8H6J": {
-      "type": "custom-feacture-collection",
+    "double_layout_collection_eFniX8": {
+      "type": "Double-layout-collection",
       "blocks": {
-        "block_3Xpj3d": {
+        "block_Vf9cLK": {
           "type": "block",
           "settings": {
             "product": "green-tan-6",
             "color_scheme": "scheme-1a415c92-20b9-4d37-9d07-ce53c7805e46"
           }
         },
-        "block_BJp6a4": {
+        "block_ejhzMc": {
           "type": "block",
           "settings": {
             "product": "green-tan-briefcase-1",
             "color_scheme": "scheme-1"
           }
         },
-        "block_iA9ECD": {
+        "block_4QFn8y": {
           "type": "block",
           "settings": {
             "product": "green-tan-7",
             "color_scheme": "scheme-1a415c92-20b9-4d37-9d07-ce53c7805e46"
           }
         },
-        "block_tee6hx": {
+        "block_r8cbm6": {
           "type": "block",
           "settings": {
             "product": "green-tan-8",
@@ -213,25 +225,25 @@
         }
       },
       "block_order": [
-        "block_3Xpj3d",
-        "block_BJp6a4",
-        "block_iA9ECD",
-        "block_tee6hx"
+        "block_Vf9cLK",
+        "block_ejhzMc",
+        "block_4QFn8y",
+        "block_r8cbm6"
       ],
       "settings": {
-        "header": "LONG WALLETS",
+        "header": "LONG  WALLETS",
         "color_scheme": "scheme-1a415c92-20b9-4d37-9d07-ce53c7805e46",
         "hidden_product_detail": false
       }
     }
   },
   "order": [
-    "custom_feacture_collection_hdeDPX",
-    "custom_image_with_text_zUTU3J",
-    "custom_feacture_collection_MK36LV",
-    "custom_image_with_text_PxYUiM",
-    "custom_feacture_collection_PEwPqy",
-    "custom_image_with_text_qqFnJ7",
-    "custom_feacture_collection_ey8H6J"
+    "double_layout_collection_EEprmd",
+    "custom_image_with_text_Yw7Yja",
+    "double_layout_collection_xPJKAx",
+    "custom_image_with_text_ChwgN7",
+    "double_layout_collection_UwJLed",
+    "custom_image_with_text_R74MQd",
+    "double_layout_collection_eFniX8"
   ]
 }

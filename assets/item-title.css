@@ -3,8 +3,8 @@
     text-align: center;
     width: 100%;
     margin-top: 40px;
-    letter-spacing: 170px;
-    text-indent: 170px;
+    letter-spacing: 172px;
+    text-indent: 172px;
     z-index: 1;
     font-family: Geologica;
     font-size: 60px;
@@ -14,8 +14,9 @@
 @media (max-width: 1440px) {
     .item_title {
         font-size: 45px;
-        letter-spacing: 100px;
-        text-indent: 100px;
+        letter-spacing: 129px;
+        text-indent: 129px;
+        margin-top: 30px;
     }
 }
 @media (max-width: 1024px) {

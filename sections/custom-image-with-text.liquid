@@ -77,7 +77,8 @@
                 >
                     <div class="product-title-price">
                         <h3>{{ section.settings.product.title }}</h3>
-                        <h3>{{ section.settings.product.price |  money_without_trailing_zeros }}</h3>
+                        {% assign product_number = product.price | money_without_currency |  split: '.' %}
+                        <h3 class="product__price">{{ product_number.first }}£</h3>
                     </div>
                 </div>
             {% endif %}
@@ -85,35 +86,44 @@
     
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const buyButton = document.querySelector(".shopify-payment-button__button");
+    if (buyButton) {
+        buyButton.textContent = "Buy now";
+    }
+    });
+</script>
 {% schema %}
     {
-        "name": "Custom-image-with-text",
+        "name": "t:sections.custom-image-with-text.name",
         "class": "section",
         "settings": [
             {
                 "type": "text",
                 "id": "title",
-                "label": "Title"
+                "label": "t:sections.custom-image-with-text.settings.title.label"
             },
             {
                 "type": "product",
                 "id": "product",
-                "label": "product"
+                "label": "t:sections.custom-image-with-text.settings.product.label"
             },
             {
                 "type": "text",
                 "id": "sub_title",
-                "label": "Subtitle"
+                "label": "t:sections.custom-image-with-text.settings.sub_title.label"
             },
             {
                 "type": "richtext",
                 "id": "content",
-                "label": "Content"
+                "label": "t:sections.custom-image-with-text.settings.content.label"
             },
             {
                 "type": "image_picker",
                 "id": "image",
-                "label": "Image"
+                "label": "t:sections.custom-image-with-text.settings.image.label"
             },
             {
                 "type": "color_scheme",

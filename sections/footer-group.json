@@ -2,51 +2,54 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "newsletter": {
-      "type": "newsletter",
+    "footer": {
+      "type": "footer",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "image_wg3L9P": {
+          "type": "image",
           "settings": {
-            "heading": "Subscribe to our emails",
-            "heading_size": "h1"
+            "image": "shopify:\/\/shop_images\/Group_1321316231.png",
+            "image_width": 300,
+            "alignment": "center"
           }
         },
-        "paragraph": {
-          "type": "paragraph",
+        "link_list_QVbNpW": {
+          "type": "link_list",
           "settings": {
-            "text": "<p>Subscribe to our mailing list for insider news, product launches, and more.<\/p>"
+            "heading": "HELF",
+            "menu": "help"
           }
         },
-        "email_form": {
-          "type": "email_form",
+        "link_list_78yqJa": {
+          "type": "link_list",
           "settings": {
+            "heading": "PRODUCTS",
+            "menu": "products"
+          }
+        },
+        "link_list_ciB4WE": {
+          "type": "link_list",
+          "settings": {
+            "heading": "ABOUT",
+            "menu": "about"
           }
         }
       },
       "block_order": [
-        "heading",
-        "paragraph",
-        "email_form"
+        "image_wg3L9P",
+        "link_list_QVbNpW",
+        "link_list_78yqJa",
+        "link_list_ciB4WE"
       ],
       "settings": {
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 36,
-        "padding_bottom": 44
-      }
-    },
-    "footer": {
-      "type": "footer",
-      "settings": {
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-1a415c92-20b9-4d37-9d07-ce53c7805e46",
         "newsletter_enable": false,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
-        "show_social": true,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "payment_enable": true,
+        "newsletter_heading": "",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
         "show_policy": false,
         "margin_top": 0,
         "padding_top": 0,
@@ -55,7 +58,6 @@
     }
   },
   "order": [
-    "newsletter",
     "footer"
   ]
 }

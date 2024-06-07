@@ -1417,6 +1417,56 @@
         "name": "Image banner"
       }
     },
+    "double-layout-collection": {
+      "name": "Double layout collection",
+      "settings": {
+        "header": {
+          "label": "Header",
+          "info": "Leave the label blank to hide the Header."
+        },
+        "hidden_product_detail": {
+          "label": "Hidden Product Detail",
+          "info": "Check box to hide the product title and price"
+        }
+      },
+      "blocks": {
+        "block": {
+          "name": "Product Item",
+          "settings": {
+            "product": {
+              "label": "Product",
+              "info": "Click the button to select a product"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Double layout collection"
+      }
+    },    
+    "custom-image-with-text": {
+      "name": "Custom Image with Text",
+      "settings": {
+        "title": {
+          "label": "Title"
+        },
+        "product": {
+          "label": "Product"
+        },
+        "sub_title": {
+          "label": "Subtitle"
+        },
+        "content": {
+          "label": "Content"
+        },
+        "image": {
+          "label": "Image"
+        }
+      },
+      "presets": {
+        "name": "custom image with text"
+      }
+    },    
     "image-with-text": {
       "name": "Image with text",
       "settings": {

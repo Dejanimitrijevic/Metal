@@ -32,18 +32,23 @@
 .footer .footer__content-top {
   padding: 40px;
 }
-.footer .footer__content-top .footer__blocks-wrapper {
-  display: flex;
-  justify-content: space-between;
+@media (max-width: 1440px) {
+  .footer .footer__content-top {
+    padding: 30px;
+  }
+  
+  
 }
 .footer__content-top .footer__blocks-wrapper .footer-block__heading {
-  letter-spacing: 20px;
+  font-size: 24px;
+  letter-spacing: 13px;
 }
 .footer__content-top .footer__blocks-wrapper a {
   font-family: Geologica;
   font-size: 24px;
   letter-spacing: -0.5px;
   text-decoration: none;
+  padding-bottom: 0.7rem;
 }
 .footer-block .footer-block__details-content {
   justify-content: left;
@@ -54,10 +59,35 @@
 .header__icon account-icon {
   display: flex;
 }
+.footer-block--padding-2 {
+  padding-left: 21px;
+}
+.footer-block--padding-3 {
+  padding-left: 41px;
+}
+.footer-block--padding-4 {
+  padding-left: 58px;
+}
+
+
 
 @media (max-width: 1440px) {
   .footer__content-top .footer__blocks-wrapper a {
-    font-size: 20px;
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  .footer__content-top .footer__blocks-wrapper .footer-block__heading  {
+    font-size: 18px;
+    letter-spacing: 9px;
+  }
+  .footer-block--padding-2 {
+    padding-left: 18px;
+  }
+  .footer-block--padding-3 {
+    padding-left: 29px;
+  }
+  .footer-block--padding-4 {
+    padding-left: 40px;
   }
 }
 @media (max-width: 1024px) {
