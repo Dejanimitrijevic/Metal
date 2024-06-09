@@ -1,0 +1,131 @@
+.product__info-wrapper .product__title h1 {
+    font-family: Geologica;
+    font-size: 24px;
+    letter-spacing: 0.5em;
+    line-height: 150%;
+}
+.product__info-wrapper .product__title {
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.product__info-wrapper .product__description {
+    margin: 0;
+}
+
+.product__description span:first-of-type {
+    font-family: Geologica;
+    font-size: 24px !important;
+    letter-spacing: -0.022em;
+    line-height: 150%;
+}
+
+.product__description ul {
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.product__description ul li span {
+    margin-left: -6px;
+}
+.price-item .product__price {
+    margin: 20px 0;
+    font-family: geologica;
+    letter-spacing: -0.03em;
+    line-height: 150%;
+}
+.hidden_product_tax {
+    display: none;
+}
+.hidden_product_varient--picker {
+    display: none;
+}
+.product__info-wrapper .product-form__input--pill label.product_variant_color {
+    background: 0;
+    border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    padding: 5px;
+    margin: 0;
+}
+.product__info-wrapper .product-form__input--pill label.product_variant_color img {
+    display: flex;
+}
+.product__info-wrapper .product-form__input--pill label.product_variant_color:hover,
+.product-form__input--pill input[type=radio]:checked+label.product_variant_color
+ {  background: 0;
+    border: 1px solid white;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    
+}
+form .product-form__buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    justify-content: left;
+    padding-left: 5px;
+}
+form .product-form__buttons .shopify-payment-button .shopify-payment-button__button {
+    border-radius: 0;
+    width: 171px;
+    height: 88px;
+    background: transparent;
+    border: 1px solid white;
+    font-size: 24px;
+    font-family: Geologica;
+    letter-spacing: -0.03em;
+    line-height: 150%;
+    padding: 0;
+}
+form .product-form__buttons .product-form__submit {
+    width: 204px;
+    height: 88px;
+    border: 1px solid white;
+    border-radius: 0;
+    font-size: 24px;
+    font-family: Geologica;
+    letter-spacing: -0.03em;
+    line-height: 150%;
+    color: white;
+}
+variant-selects {
+    padding-top: 8px;
+}
+.metafield-rich_text_field {
+    font-size: 24px;
+    font-family: 'Geologica';
+    letter-spacing: -0.03em;
+    line-height: 150%;
+}
+.metafield-rich_text_field br {
+    display: none;
+}
+
+.metafield-rich_text_field ul,
+.metafield-rich_text_field p {
+    margin: 0;
+}
+.metafield-rich_text_field p {
+    padding: 20px 0 20px 27px;
+}
+.metafield-rich_text_field ul {
+    padding-left: 27px;
+}
+.metafield-rich_text_field ul strong {
+    font-weight: 400;
+}
+.product__media-list--stacked {
+    gap: 0;
+}
+.product--stacked .product__media-list--stacked__li {
+    max-width: 50%;
+}

@@ -2493,6 +2493,9 @@
         "enable_sticky_info": {
           "label": "Enable sticky content on desktop"
         },
+        "page_width": {
+          "label": "Enable page width"
+        },
         "gallery_layout": {
           "label": "Desktop layout",
           "options__1": {
