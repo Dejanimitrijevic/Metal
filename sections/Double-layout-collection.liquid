@@ -10,7 +10,7 @@
                 {% if block.type == "block" %}
                     <li class="{% if section.blocks.size == 5 %}grid__layout-5__item--{{ forloop.index }}{% endif %} {% if section.blocks.size == 4 %}grid__layout-4__item--{{ forloop.index }}{% endif %} color-{{ block.settings.color_scheme }}">
                         <a href="{{ product.url }}" class="product-image-detail">
-                            <img
+                            <img class="{% if section.blocks.size == 4  %}image{% endif %}"
                                 srcset="
                                 {% if product.featured_media.width >= 350 %}{{ product.featured_media | image_url: width: 350 }} 350w,{% endif %}
                                 {% if product.featured_media.width >= 750 %}{{ product.featured_media | image_url: width: 750 }} 750w,{% endif %}

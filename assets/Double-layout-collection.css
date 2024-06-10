@@ -54,6 +54,11 @@ li {
 .parent-4 .product-image-detail {
     display: flex;
 }
+
+.grid__layout-4__item--2 img {
+    object-fit: cover;
+    aspect-ratio: 0.5;
+}
 @media (max-width: 1440px) {
     .product-detail h3 {
         letter-spacing: -0.5px;

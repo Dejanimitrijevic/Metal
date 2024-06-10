@@ -196,9 +196,34 @@ variant-selects {
 .bundle-add-to-cart {
     display: none;
 }
-.item-product:hover .bundle-add-to-cart {
+.addcart-hover:hover .bundle-add-to-cart {
     display: block !important;
     cursor: pointer;
+}
+.bundle-added {
+    display: none;
+    width: 154px;
+    height: 88px;
+    font-size: 24px;
+    font-family: 'Geologica';
+    letter-spacing: -0.03em;
+    line-height: 150%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
+    backdrop-filter: blur(10px);
+    border: 0;
+}
+.bundle-added span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.bundle-visiable {
+    display: block !important;
 }
 
 @media (max-width: 1440px) {
@@ -280,6 +305,11 @@ variant-selects {
     }
     .bundle-add-to-cart button {
         width: 153px;
+        height: 66px;
+        font-size: 18px;
+    }
+    .bundle-added {
+        width: 115.5px;
         height: 66px;
         font-size: 18px;
     }

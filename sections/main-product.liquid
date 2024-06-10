@@ -650,10 +650,21 @@
           <div class="bundle">
             <span class="bundle-header">Bundle discount</span>
             <div class="bundle__discount">
+
               {% for metaobject in product.metafields.custom.discount_product.value %}
                 {%  assign item  =  metaobject.discount_item_product.value %}
-                <script>console.log("item", {{ item | json }})</script>
-                  <div class="item-product">
+                
+                {% for cartitem in cart.items %} 
+                  {% assign cart_product_id = cartitem.product.id %} 
+                  {% assign addcheck = false %} 
+                    {% if cart_product_id == item.id %} 
+                      {% assign addcheck = true %}
+                      {%  break  %}
+                    {% elsif cart_product_id != item.id%}
+                      {% assign addcheck = false %} 
+                    {% endif %} 
+                  {% endfor %}
+                  <div class="item-product {% if addcheck == false or addcheck == null  %}addcart-hover{% endif %}">
                     <a href="{{ item.url }}">
                       <img
                         src="{{ item.featured_image | image_url: width: 300 }}"
@@ -670,7 +681,7 @@
                       <span class="percent">-{{ metaobject.discount_percent.value }}%</span>
                     </div>
                   </div>
-
+                    <div class="{% if addcheck %}bundle-visiable{% endif %} bundle-added"><span>Added</span></div>
                   <div class="bundle-add-to-cart">
                     {%- form 'product',
                       product,
@@ -679,7 +690,7 @@
                       novalidate: 'novalidate',
                       data-type: 'add-to-cart-form'
                     -%}
-                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                    <input type="hidden" name="id" value="{{ item.selected_or_first_available_variant.id }}">
                     <button class="custom-add-cart" type="submit">Add to cart</button>
                     {% endform %}
                   </div>
