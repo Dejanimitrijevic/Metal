@@ -1465,5 +1465,16 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "Coming Soon",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "coming_soon",
+        "label": "Coming Soon",
+        "default": false
+      }
+    ]
   }
 ]

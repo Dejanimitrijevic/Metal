@@ -1,0 +1,59 @@
+.coming-soon .product-detail,
+.coming-soon .product-title-price,
+.coming-soon .footer-block--padding-2,
+.coming-soon .footer-block--padding-3,
+.coming-soon .footer-block--padding-4,
+.coming-soon .footer__content-bottom,
+.coming-soon .header__inline-menu,
+.coming-soon .header__icons,
+.coming-soon header-drawer {
+    display: none;
+}
+.coming-soon .product-btn {
+    visibility: hidden;
+}
+.coming-soon .footer-block--padding-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coming-soon .footer-soon,
+.coming-soon .header-soon {
+    display: block;
+}
+.coming-soon .footer-block--padding-1 .footer-block__details-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.coming-soon .footer .footer__content-top {
+    padding: 154px 40px;
+}
+
+.footer-soon,
+.header-soon {
+    display: none;
+    font-family: 'Geologica';
+    font-size: 24px;
+    letter-spacing: 0.5em;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+.coming-soon .header {
+    display: flex;
+    justify-content: center;
+}
+.coming-soon .header__heading {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+@media (max-width: 1440px) {
+    .coming .footer-soon, .header-soon {
+        font-size: 17px;
+        letter-spacing: 0.4em;
+    }
+    .coming-soon .header__heading {
+        gap: 3px;
+    }
+}
