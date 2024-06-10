@@ -647,8 +647,46 @@
             {{ 'products.product.view_full_details' | t }}
             {% render 'icon-arrow' %}
           </a>
+          <div class="bundle">
+            <span class="bundle-header">Bundle discount</span>
+            <div class="bundle__discount">
+              {% for metaobject in product.metafields.custom.discount_product.value %}
+                {%  assign item  =  metaobject.discount_item_product.value %}
+                <script>console.log("item", {{ item | json }})</script>
+                  <div class="item-product">
+                    <a href="{{ item.url }}">
+                      <img
+                        src="{{ item.featured_image | image_url: width: 300 }}"
+                        alt="{{ item.featured_image.alt | escape }}"
+                        width="auto"
+                        height="auto"
+                        loading="lazy"
+                      >               
+                    </a>
+                  <div class="discount-product-info">
+                    <span>{{ item.title }}</span>
+                    <div class="discount-price-with-percent">
+                      <span>{{ item.price |  divided_by: 100 }}£</span>
+                      <span class="percent">-{{ metaobject.discount_percent.value }}%</span>
+                    </div>
+                  </div>
 
-
+                  <div class="bundle-add-to-cart">
+                    {%- form 'product',
+                      product,
+                      id: product_form_id,
+                      class: 'form',
+                      novalidate: 'novalidate',
+                      data-type: 'add-to-cart-form'
+                    -%}
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                    <button class="custom-add-cart" type="submit">Add to cart</button>
+                    {% endform %}
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
           <span>{{ product.metafields.custom.material |  metafield_tag}}</span>
           <span>{{ product.metafields.custom.care |  metafield_tag }}</span>
         </product-info>
@@ -684,7 +722,7 @@
     {%- endfor -%}
 
     {%- if product.media.size > 0 -%}
-      <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></>
       <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
@@ -702,7 +740,7 @@
         assign seo_media = product.featured_media
       endif
     -%}
-
+    {%  render 'recently-viewed' %}
     <script type="application/ld+json">
       {
         "@context": "http://schema.org/",

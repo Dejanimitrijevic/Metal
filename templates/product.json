@@ -22,7 +22,8 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
-            "swatch_shape": "circle"
+            "swatch_shape": "circle",
+            "hidden_product_varient--picker": true
           }
         },
         "quantity_selector": {
@@ -49,7 +50,9 @@
       ],
       "settings": {
         "enable_sticky_info": false,
+        "page_width": false,
         "color_scheme": "scheme-1a415c92-20b9-4d37-9d07-ce53c7805e46",
+        "hidden_product_tax": true,
         "media_size": "large",
         "constrain_to_viewport": false,
         "media_fit": "cover",
@@ -60,7 +63,7 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 0,
-        "padding_bottom": 44
+        "padding_bottom": 0
       }
     },
     "related-products": {
